@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제출용 소개페이지</title>
+   
+   
+   <style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: beige;
+        height: 100%;
+        margin: 0;
+    }
+
+    #wrapper {
+        width: 900px;
+        background-color: white;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+/*--------------------------aside-------------------------*/
+
+
+    aside {
+        width: 300px;
+        background-color: skyblue;
+        float: left;
+        height: 1080px;
+        padding: 20px 50px 20px 50px;
+    }
+
+    .developer {
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 5px 5px 5px 5px gray;
+        width: 220px;
+        height: 230px;
+    }
+
+    #detail {
+        position: relative;
+        top: 50px;
+    }
+
+    #sns {
+        position: relative;
+        top: 100px;
+    }
+
+    aside > div > a {
+        line-height: 30px;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .insta {
+        margin-left: 40px;
+    }
+
+
+/*--------------------------section-------------------------*/
+    
+    .main {
+        width: 600px;
+        height: 1080px;
+        padding : 20px;
+        float: right;
+        background-color: white;
+    }
+
+    
+    article {
+        border-bottom: 1px dotted black;
+    }
+
+    article h2 {
+        margin-left: 30px;
+        font-weight: bold;
+    }
+
+    article p {
+        margin-left: 30px;
+    }
+
+    article > ul {
+        line-height: 30px;
+        padding-left: 50px;
+    }
+
+    .li1 ul, .li2 ul {
+        margin-top: 20px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .li1 li, .li2 li {
+        list-style-type: none;
+    }
+
+   
+    .main3 p {
+        line-height: 10px;
+    }
+
+    #html1 {
+        height: 40px;
+        width: 30px;
+    }
+
+    .main4 > table {
+        border: 2px solid black;
+        width: 90%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .main4 > table > tr {
+        border: 1px solid black;
+    }
+
+    table tr,th,td {
+        text-align: center;
+    }
+    .main4 > table th {
+        background-color: skyblue;
+    }
+
+    .main5 textarea {
+        margin-left: 30px;
+    }
+
+    input[type="submit"]  {
+        margin-left: 325px;
+    }
+
+    
+    #table1 {
+        border-right:none;
+        border-left:none;
+        border-top:none;
+        border-bottom:none;
+    }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div id="wrapper">
+        <aside>
+            <div id="namecard">
+                <img class="developer" src="./image/developer.jpg">
+                <h1>Kim Do Yun</h1>
+                <p>김도윤 소개 페이지 입니다.</p>
+            </div>
+           
+            <div id="detail">
+                <h1>Address</h1>
+                <p>Namyangju, Kyunggido, Korea</p>
+                <p>kdoy1027@naver.com</p>
+            </div>
+            
+            <div id="sns">
+                <h2>SNS</h2>
+                <a href="https://www.facebook.com/?locale=ko_KR" target="_blank">facebook</a>
+                <a href="https://www.instagram.com" target="_blank" class="insta"><span>instagram</span></a>
+            </div>
+        </aside>
+        <section class="main">
+            <article class="main1">
+                <h2>Who am I?</h2>
+                <p>프론트엔드 웹 기술(Front-end Web Tech.)에 관심이 많습니다.</p>
+                <p>현재 이젠컴퓨터학원에서 프로그래밍을 배우고 있습니다.</p>
+            </article>
+
+            <article class="main2">
+                <h2>Experience</h2>
+                <ul class="ul1">
+                    <li class="li1" type="square">프론트엔드 개발
+                        <table id="table1">
+                            <tr>
+                                <td><img src="./image/html555.jpg" id="html1"></td>
+                                <td>HTML5</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./image/css32.jpg.png" id="html1"></td>
+                                <td >CSS3</td>
+                            </tr>
+                            <tr></tr>
+                                <td><img src="./image/jvscript123.jpg.jpg" id="html1"></td>
+                                <td>Java script</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li class="li2" type="square">백엔드 개발
+                        <table id="table1">
+                        <tr>
+                            <td><img src="./image/react.jpg" id="html1"></td>
+                            <td>React</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./image/node.jpg" id="html1"></td>
+                            <td>Node.js</td>
+                        </tr>
+                        </table>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="main3">
+                <h2>Plan / Aspiration</h2>
+                <p>프론트엔드 웹 기술(Front-end Web Tech.)에 관심이 많습니다.</p>
+                <p>현재 이젠컴퓨터학원에서 프로그래밍을 배우고 있습니다.</p>
+                <p>6개월 동안 열심히 수강하여 <mark>경쟁력 있는 포트폴리오</mark>를 만들겠습니다.</p>
+            </article>
+
+            <article class="main4">
+                <table>
+                    <caption>학력 사항</caption>
+                    <tr>
+                        <th>출신학교</th>
+                        <th>전공</th>
+                        <th>기간</th>
+                        <th>구분</th>
+                    </tr>
+
+                    <tr>
+                        <td>서울대학교</td>
+                        <td>컴퓨터학과</td>
+                        <td>2024.03 ~ 2024.03</td>
+                        <td>졸업</td>
+                    </tr>
+
+                    <tr>
+                        <td>서울고등학교</td>
+                        <td>인문계</td>
+                        <td>2024.03 ~ 2024.02</td>
+                        <td>졸업</td>
+                    </tr>
+
+                </table>
+            </article>
+
+            <article class="main5">
+                <form>
+                <h2>방문자 댓글</h2>
+                <textarea  rows="3" cols="60" placeholder="첫번째 댓글을 남겨주세요."></textarea>
+                <br>
+            
+                <input type="submit" value="댓글쓰기">
+                <input type="reset" value="모두 삭제"> 
+                </form>
+
+                <br>
+            
+            </article>
+
+        </section>
+
+    </div>
+
+
+
+
+</body>
+</html>

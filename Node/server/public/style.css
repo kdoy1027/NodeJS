@@ -1,0 +1,9 @@
+body{
+    font-family: '맑은 고딕';
+    font-weight: bold;
+    color: black;
+
+}
+.container-fluid {
+    background-color: beige;
+}

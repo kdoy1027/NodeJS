@@ -1,0 +1,6 @@
+Node.js is an open-source, cross-platform JavaScript runtime environment.
+Node.js는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임입니다.
+
+이진값을 내용을 읽기 위해서는
+readFile 함수에 uft-8 옵션을 사용하거나, data에 toString 함수를 적용하여 문자열 형태로 
+변환하여야 합니다.
